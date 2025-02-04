@@ -1,1 +1,1 @@
-# simple-API-word-counter
+# Simple API for word counter
