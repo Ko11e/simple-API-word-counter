@@ -1,12 +1,11 @@
 const express = require('express');
-const bodyParser = require('body-parser');
-
-
 const app = express();
+
+const bodyParser = require('body-parser');
 const PORT = 3000;
 
 app.use(bodyParser.text());
-
+;
 
 // API-endpoint
 app.post("/count", (req, res) => {
@@ -14,13 +13,16 @@ app.post("/count", (req, res) => {
         return res.status(400).json({ error: "No text have provided" });
     }
 
-    // const wordFrequencies = countWords(req.body);
+    const text = req.body;
+    // Call the wordcounter function
+    // const top_10_count = wordcounter(text);
+
     res.json({
-        message: "The text has been received",
+        text: text,
     });
 });
 
-// Starta servern
+// Start server
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT} http://localhost:${PORT}`);
   });
