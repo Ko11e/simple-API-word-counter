@@ -34,6 +34,30 @@ express.js can be installed by typing
 npm install express --save
 ```
 
+### Installation
+
+To set up the project locally, follow the steps below:
+
+1. Clone the repository:
+   ```sh
+   git clone <repository-url>
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd word-counter-api
+   ```
+3. Install dependencies:
+   ```sh
+   npm install
+   ```
+4. Start the server:
+   ```sh
+   node index.js
+   ```
+   The API should now be running on `http://localhost:3000`.
+
+If the API is running corectly the text `Server is running on port 3000 http://localhost:3000` should be viewed in the terminal.
+
 ### Deploy and Cloning
 
 #### Clone the repository
@@ -58,15 +82,15 @@ This API is deployed on Render by following the steps below.
 4. Choose Node.js as the runtime.
 5. Set the Build Command to:
 
-``` terminal
-npm install
-```
+    ``` sh
+    npm install
+    ```
 
 6. Set the Start Command to:
 
-``` terminal
-node index.js
-```
+    ``` sh
+    node index.js
+    ```
 
 7. Click Deploy.
 
@@ -76,7 +100,7 @@ node index.js
 
 **Youtube creators:**
 
-- **_Fireship_** - RESTful APIs in 100 Seconds // Build an API from Scratch with Node.js Express [Fireship]
+- **_Fireship_** - RESTful APIs in 100 Seconds // Build an API from Scratch with Node.js Express
 - **_Awsome_** - The Right Way To Build REST APIs
 
 ### Code
