@@ -4,6 +4,9 @@ This is a simple API that calculates the frequency of words in a given text inpu
 
 ## Use the API
  
+You can use the API by making a `POST`request with raw text data.
+
+**Exemple**
 
 ``` javascript
     fetch("https://simple-api-word-counter.onrender.com/count", {
@@ -20,8 +23,16 @@ This is a simple API that calculates the frequency of words in a given text inpu
 
 ### Prerequisites
 
+Ensure your have the following programs
+
 - Node.js (version 12 or higher)
 - Expresse.js
+
+express.js can be installed by typing
+
+``` terminal
+npm install express --save
+```
 
 ### Deploy and Cloning
 
