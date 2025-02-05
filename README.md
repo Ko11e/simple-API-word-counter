@@ -59,3 +59,16 @@ node index.js
 
 7. Click Deploy.
 
+## Credit
+
+### Media
+
+**Youtube creators:**
+
+- **_Fireship_** - RESTful APIs in 100 Seconds // Build an API from Scratch with Node.js Express [Fireship]
+- **_Awsome_** - The Right Way To Build REST APIs
+
+### Code
+
+**Stockoverflow, MDN Web Docs**
+Code and solutions to bugs that appear under the project were found using Stockoverflow and MDN Web Docs.
