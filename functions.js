@@ -1,26 +1,18 @@
 function wordcounter(text) {
+    const wordAndFrequency = {};
+    // split text into words
     const lowerText = text.toLowerCase().split('.').join("");
     const words = lowerText.split(/\s+/).filter(word => word.length > 0);
-
-    if (!text) { return null;}
-
-    words.sort();
-
-    console.log(words);
-    const wordsFrequency = {};
-        
-    words.forEach(element => {
-        if (wordsFrequency[element]) {
-            wordsFrequency[element]++;
-        } else {
-            wordsFrequency[element] = 1;
+    
+    // count the frequency of each word
+    
+    words.forEach(word => {
+        if (word) {
+            // if word is already in the object, increment the count
+            wordAndFrequency[word] = wordAndFrequency[word] ? wordAndFrequency[word] + 1 : 1;
         }
     });
-
-    console.log(wordsFrequency);
-
-    const sortedWords = Object.keys(wordsFrequency).sort((a, b) => wordsFrequency[b] - wordsFrequency[a]);
-    console.log(sortedWords);
+    console.log(wordAndFrequency);
 
 
     return words.length;
