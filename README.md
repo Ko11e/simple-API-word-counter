@@ -31,7 +31,7 @@ Ensure you have the following programs
 express.js can be installed by typing
 
 ``` terminal
-npm install express --save
+npm install express
 ```
 
 ### Installation
