@@ -3,10 +3,10 @@
 This is a simple API that calculates the frequency of words in a given text input. It returns the 10 most frequent words along with their count.
 
 ## Use the API
- 
+
 You can use the API by making a `POST`request with raw text data.
 
-**Exemple**
+**Example**
 
 ``` javascript
     fetch("https://simple-api-word-counter.onrender.com/count", {
@@ -23,10 +23,10 @@ You can use the API by making a `POST`request with raw text data.
 
 ### Prerequisites
 
-Ensure your have the following programs
+Ensure you have the following programs
 
 - Node.js (version 12 or higher)
-- Expresse.js
+- Express.js
 
 express.js can be installed by typing
 
@@ -56,7 +56,7 @@ To set up the project locally, follow the steps below:
    ```
    The API should now be running on `http://localhost:3000`.
 
-If the API is running corectly the text `Server is running on port 3000 http://localhost:3000` should be viewed in the terminal.
+If the API is running correctly the text `Server is running on port 3000 http://localhost:3000` should be viewed in the terminal.
 
 ## Deploy and Cloning
 
@@ -126,7 +126,7 @@ curl.exe -X POST "https://simple-api-word-counter.onrender.com/count" \
 **Youtube creators:**
 
 - **_Fireship_** - RESTful APIs in 100 Seconds // Build an API from Scratch with Node.js Express
-- **_Awsome_** - The Right Way To Build REST APIs
+- **_Awesome_** - The Right Way To Build REST APIs
 
 ### Code
 
