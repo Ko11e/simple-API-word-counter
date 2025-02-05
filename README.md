@@ -58,9 +58,9 @@ To set up the project locally, follow the steps below:
 
 If the API is running corectly the text `Server is running on port 3000 http://localhost:3000` should be viewed in the terminal.
 
-### Deploy and Cloning
+## Deploy and Cloning
 
-#### Clone the repository
+### Clone the repository
 
 A local clone of this repository can be made on GitHub. Please follow the below steps:
 
@@ -72,7 +72,7 @@ A local clone of this repository can be made on GitHub. Please follow the below 
 6. Type git clone, and then paste the URL you copied earlier.
 7. Press Enter to create your local clone.
 
-#### Deploy API
+### Deploy API
 
 This API is deployed on Render by following the steps below.
 
@@ -93,6 +93,31 @@ This API is deployed on Render by following the steps below.
     ```
 
 7. Click Deploy.
+
+## API Endpoint
+
+### `POST /count`
+- **Request:**
+  - Content-Type: `text/plain`
+  - Body: Raw text input
+- **Response:**
+  - A JSON object with the 10 most frequent words and their counts.
+
+#### Example Request:
+```sh
+curl.exe -X POST "https://simple-api-word-counter.onrender.com/count" \
+     -H "Content-Type: text/plain" \
+     --data "Hello world hello world hello API"
+```
+
+#### Example Response:
+```json
+{
+  "hello": 3,
+  "world": 2,
+  "api": 1
+}
+```
 
 ## Credit
 
